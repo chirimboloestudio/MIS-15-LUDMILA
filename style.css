@@ -1,0 +1,201 @@
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #080808;
+    color: #ffffff;
+}
+
+/* PORTADA */
+.welcome-screen {
+    min-height: 100svh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 35px 20px;
+
+    background:
+        radial-gradient(ellipse at center, #202020 0%, #101010 48%, #050505 100%);
+}
+
+/* CONTENIDO */
+.welcome-content {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    animation: appear 1.5s ease both;
+}
+
+/* TEXTO SUPERIOR */
+.eyebrow {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 6px;
+    font-weight: 300;
+    color: #b8b8b8;
+    margin-bottom: 35px;
+}
+
+/* TÍTULO */
+.welcome-content h1 {
+    font-family: 'Italiana', serif;
+    font-size: clamp(80px, 17vw, 115px);
+    font-weight: 400;
+    line-height: 1;
+    color: #ffffff;
+    letter-spacing: -3px;
+}
+
+.welcome-content h1 span {
+    font-style: italic;
+    color: #bdbdbd;
+}
+
+/* SEPARADOR */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 30px auto;
+}
+
+.divider span {
+    width: 55px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #aaa, transparent);
+}
+
+.divider i {
+    color: #d4d4d4;
+    font-size: 19px;
+    font-style: normal;
+}
+
+/* NOMBRE */
+.welcome-content h2 {
+    font-family: 'Italiana', serif;
+    font-size: clamp(52px, 12vw, 75px);
+    font-weight: 400;
+    color: #eeeeee;
+    margin-bottom: 22px;
+    letter-spacing: 2px;
+}
+
+/* DESCRIPCIÓN */
+.welcome-content p {
+    max-width: 290px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 2;
+    font-weight: 300;
+    color: #b5b5b5;
+    letter-spacing: 0.5px;
+}
+
+/* BOTÓN */
+.enter-button {
+    margin-top: 45px;
+    width: 195px;
+    height: 52px;
+    border: 1px solid #999999;
+    background: transparent;
+    color: #ffffff;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+
+    transition: all 0.4s ease;
+}
+
+.enter-button:hover {
+    background: #ffffff;
+    color: #080808;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.arrow {
+    font-size: 17px;
+    transition: transform 0.3s ease;
+}
+
+.enter-button:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* PIE */
+.footer-note {
+    display: block;
+    margin-top: 70px;
+    font-size: 8px;
+    letter-spacing: 5px;
+    color: #777777;
+}
+
+/* DECORACIONES */
+.side-decoration {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.decoration-one {
+    top: -210px;
+    left: -180px;
+}
+
+.decoration-two {
+    bottom: -210px;
+    right: -180px;
+}
+
+/* ANIMACIÓN */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+    .eyebrow {
+        font-size: 9px;
+        letter-spacing: 4px;
+    }
+
+    .footer-note {
+        margin-top: 55px;
+    }
+
+    .side-decoration {
+        width: 230px;
+        height: 230px;
+    }
+}

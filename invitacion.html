@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>Los 15 de Ludmila</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="invitacion.css">
+</head>
+
+<body>
+
+    <audio id="backgroundMusic" loop>
+        <source src="Lindsey Stirling - Carol of the Bells (Official Music Video).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- MÚSICA -->
+    <button class="music-button" id="musicButton">
+        <span id="musicIcon">♫</span>
+        <span id="musicText">REPRODUCIR MÚSICA</span>
+    </button>
+
+
+    <!-- PORTADA PRINCIPAL -->
+    <header class="hero">
+
+        <div class="hero-image"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-top">
+            <span>UNA CELEBRACIÓN ESPECIAL</span>
+            <span>26 · 12 · 2026</span>
+        </div>
+
+        <div class="hero-content">
+
+            <span class="eyebrow">UNA NOCHE PARA RECORDAR</span>
+
+            <h1>15</h1>
+
+            <div class="hero-divider"></div>
+
+            <h2>Ludmila</h2>
+
+            <p>26 DE DICIEMBRE · 2026</p>
+
+            <a href="#presentacion" class="hero-button">
+                DESCUBRIR INVITACIÓN
+                <span>↓</span>
+            </a>
+
+        </div>
+
+        <div class="hero-bottom">
+            <span>SALADILLO · BUENOS AIRES</span>
+            <span>UNA NOCHE INOLVIDABLE</span>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- FRASE -->
+        <section class="presentation" id="presentacion">
+
+            <span class="section-number">01 — UNA NUEVA ETAPA</span>
+
+            <div class="presentation-content">
+
+                <h2>
+                    Existen momentos en la vida que
+                    <em>imaginamos, soñamos y esperamos.</em>
+                    Uno de esos momentos ha llegado.
+                </h2>
+
+                <div class="silver-line"></div>
+
+                <p>
+                    Hoy comienza un capítulo inolvidable.
+                    Me encantaría que formes parte de esta
+                    noche tan especial.
+                </p>
+
+                <span class="signature">Ludmila</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOTOGRAFÍA DESTACADA -->
+        <section class="main-photograph">
+
+            <img src="5.jpeg" alt="Retrato de Ludmila">
+
+            <div class="photo-caption">
+                <span>UN MOMENTO, UN RECUERDO</span>
+                <h2>Mis quince.</h2>
+            </div>
+
+        </section>
+
+
+        <!-- GALERÍA -->
+        <section class="gallery">
+
+            <div class="gallery-title">
+                <span class="section-number">02 — MI HISTORIA</span>
+                <h2>Pequeños grandes <em>momentos.</em></h2>
+            </div>
+
+            <div class="gallery-layout">
+
+                <figure class="gallery-photo gallery-photo-one">
+                    <img src="1.jpeg" alt="Ludmila">
+                    <figcaption>01 / RECUERDOS</figcaption>
+                </figure>
+
+                <div class="gallery-message">
+                    <span>XV</span>
+                    <h3>Una noche.<br>Mil emociones.</h3>
+                    <p>
+                        Hay momentos que merecen
+                        ser compartidos con quienes
+                        queremos.
+                    </p>
+                </div>
+
+                <figure class="gallery-photo gallery-photo-two">
+                    <img src="2.jpeg" alt="Ludmila">
+                    <figcaption>02 / MOMENTOS</figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARRUSEL -->
+        <section class="horizontal-gallery">
+
+            <div class="gallery-title">
+                <span class="section-number">03 — INSTANTES</span>
+                <h2>Recuerdos que <em>perduran.</em></h2>
+            </div>
+
+            <div class="carousel-container">
+
+                <div class="carousel-track" id="carouselTrack">
+
+                    <div class="carousel-slide">
+                        <img src="3.jpeg" alt="Ludmila en una motocicleta">
+                        <span>03 / UN MOMENTO ESPECIAL</span>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="4.jpeg" alt="Ludmila junto a un automóvil">
+                        <span>04 / UN RECUERDO INOLVIDABLE</span>
+                    </div>
+
+                </div>
+
+                <button id="prevSlide" class="carousel-arrow">←</button>
+                <button id="nextSlide" class="carousel-arrow">→</button>
+
+            </div>
+
+            <div class="carousel-progress">
+                <div id="carouselProgress"></div>
+            </div>
+
+        </section>
+
+
+        <!-- CUENTA REGRESIVA -->
+        <section class="countdown-section">
+
+            <span class="section-number">04 — CADA VEZ FALTA MENOS</span>
+
+            <h2>La cuenta regresiva</h2>
+
+            <div class="countdown" id="countdown">
+
+                <div class="countdown-item">
+                    <strong id="days">00</strong>
+                    <span>DÍAS</span>
+                </div>
+
+                <i>:</i>
+
+                <div class="countdown-item">
+                    <strong id="hours">00</strong>
+                    <span>HORAS</span>
+                </div>
+
+                <i>:</i>
+
+                <div class="countdown-item">
+                    <strong id="minutes">00</strong>
+                    <span>MINUTOS</span>
+                </div>
+
+                <i>:</i>
+
+                <div class="countdown-item">
+                    <strong id="seconds">00</strong>
+                    <span>SEGUNDOS</span>
+                </div>
+
+            </div>
+
+            <p>26 DE DICIEMBRE DE 2026 · 21:15 HS.</p>
+
+        </section>
+
+
+        <!-- INFORMACIÓN -->
+        <section class="event-section">
+
+            <div class="gallery-title">
+                <span class="section-number">05 — EL GRAN DÍA</span>
+                <h2>Quiero celebrarlo <em>con vos.</em></h2>
+            </div>
+
+            <div class="event-grid">
+
+                <article class="event-card">
+
+                    <span class="event-number">01</span>
+
+                    <span class="event-label">FECHA Y HORARIO</span>
+
+                    <div class="event-icon">✳</div>
+
+                    <h3>26 de diciembre</h3>
+
+                    <p>Sábado · 21:15 hs.</p>
+
+                    <span class="event-year">2026</span>
+
+                </article>
+
+
+                <article class="event-card">
+
+                    <span class="event-number">02</span>
+
+                    <span class="event-label">LUGAR</span>
+
+                    <div class="event-icon">✧</div>
+
+                    <h3>José Domingo</h3>
+
+                    <p>Eventos · Saladillo</p>
+
+                    <button id="openMap" class="location-button">
+                        VER UBICACIÓN ↗
+                    </button>
+
+                </article>
+
+
+                <article class="event-card">
+
+                    <span class="event-number">03</span>
+
+                    <span class="event-label">VESTIMENTA</span>
+
+                    <div class="event-icon">◇</div>
+
+                    <h3>Elegante Sport</h3>
+
+                    <p>Para una noche especial</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAPA -->
+        <div class="map-modal" id="mapModal">
+
+            <div class="map-box">
+
+                <button id="closeMap" class="close-map">✕</button>
+
+                <span class="section-number">CÓMO LLEGAR</span>
+
+                <h2>José Domingo Eventos</h2>
+
+                <iframe
+                    src="https://www.google.com/maps?q=Jos%C3%A9+Domingo+Eventos+Saladillo&output=embed"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+                <a href="https://maps.app.goo.gl/yNHfHJb2EQYdQ4ij7"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ABRIR EN GOOGLE MAPS ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONFIRMACIÓN -->
+        <section class="confirmation">
+
+            <div class="confirmation-content">
+
+                <span class="section-number">06 — ME ENCANTARÍA CONTAR CON VOS</span>
+
+                <h2>¿Me acompañás<br><em>en esta noche?</em></h2>
+
+                <p>
+                    Tu presencia hará que este momento
+                    sea todavía más especial.
+                </p>
+
+                <span class="confirmation-deadline">
+                    CONFIRMAR ANTES DEL 12 DE DICIEMBRE
+                </span>
+
+                <a
+                    href="https://wa.me/5492344426457?text=Hola%2C%20Ludmila.%20Confirmo%20mi%20asistencia%20a%20tus%2015."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="whatsapp-button">
+
+                    CONFIRMAR ASISTENCIA
+
+                    <span>↗</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE -->
+    <footer>
+
+        <div class="footer-line"></div>
+
+        <h2>Ludmila</h2>
+
+        <p>MIS 15 · 26.12.2026</p>
+
+        <span>UNA NOCHE PARA RECORDAR SIEMPRE</span>
+
+    </footer>
+
+    <div class="production-footer">
+    <span>LABORATORIO DE IMAGEN</span>
+    <a href="https://wa.me/5492345561092" target="_blank">
+        <img src="Logo.webp" alt="Daniel's Laboratorio de Imagen">
+    </a>
+    <span>© 2026 · TODOS LOS DERECHOS RESERVADOS</span>
+</div>
+
+
+    <script src="invitacion.js"></script>
+
+</body>
+</html>
